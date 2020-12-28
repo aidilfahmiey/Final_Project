@@ -2,17 +2,20 @@
 
 Proposal - Task Delegation
 
-1. 
-- Introduction 
+1. SABRINA
+
+- Introduction
 - Objective
 - Features and functionalities
 - References
 
 2.
+
 - Define views, controllers, routes and models
 - References
 
 3.  AIDIL
+
 - ERD
 - Sequence diagram
 - References
