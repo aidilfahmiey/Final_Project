@@ -14,8 +14,10 @@ Proposal - Task Delegation
 - Define views, controllers, routes and models
 - References
 
-3.  AIDIL
+3.
 
-- ERD
-- Sequence diagram
-- References
+**Entity Relationship Diagram (ERD)**
+![Entity Relationship Diagram](/resources/ERD.jpg)
+
+**Sequence Diagram**
+![Entity Relationship Diagram](/resources/SD.jpg)
