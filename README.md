@@ -40,10 +40,10 @@ In this day and age, railway transportation is one of the important modes of tra
 
 4. Diagram:
 
-**Entity Relationship Diagram (ERD)**
-![Entity Relationship Diagram](/resources/ERD.jpg)
+- **Entity Relationship Diagram (ERD)**
+  ![Entity Relationship Diagram](/resources/ERD.jpg)
 
 ---
 
-**Sequence Diagram**
-![Entity Relationship Diagram](/resources/SD.jpg)
+- **Sequence Diagram**
+  ![Entity Relationship Diagram](/resources/SD.jpg)
