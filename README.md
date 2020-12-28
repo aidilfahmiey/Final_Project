@@ -44,8 +44,6 @@ In this day and age, railway transportation is one of the important modes of tra
 
   ![Entity Relationship Diagram](/resources/ERD.jpg)
 
----
-
 - **Sequence Diagram**
 
   ![Entity Relationship Diagram](/resources/SD.jpg)
