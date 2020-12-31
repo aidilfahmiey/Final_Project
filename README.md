@@ -47,3 +47,39 @@ In this day and age, railway transportation is one of the important modes of tra
    - **Sequence Diagram**
 
    ![Entity Relationship Diagram](/resources/SD.jpg)
+   
+   5. view: 
+           Login and register page
+           booking form page
+           Schedule page
+           booking table displaying cancel and update booking
+           confirmation page with toal price and discount
+           
+   Model:  
+          User has one to many relationship with tickets. One user can buy many tickets
+          ticket has many to one relationship with train
+          train has one to many relationship with ticket
+          
+   Route:  
+           route for return views.
+           route for models.
+           route for return data passed by controller into view
+           
+  Controller: 
+           For model to pass data
+           for update and cancel booking
+           
+ User Athentication:
+           user registration
+           user login
+           reset password
+ 
+ Error checking: 
+          validate booking form and show error message
+          validate schedule table and show error message
+          validate register and login and show error message
+          
+          
+                 
+     
+           
