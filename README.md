@@ -67,10 +67,9 @@ Proposal - Task Delegation
 
    **Controller:**
    <ul>
-   <li> For model to pass form data, get data and find data
+   <li> For model to pass form data also get data and find data from database
    <li> For update and cancel booking
    <li> calculate ticket price and discount
-   <li> update and delete booking 
    <li> check availabe ticket, time and train
    </ul>
 
