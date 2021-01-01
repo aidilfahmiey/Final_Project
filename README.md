@@ -56,7 +56,7 @@ Proposal - Task Delegation
    ![Entity Relationship Diagram](/resources/SD.jpg)
 
 #### 6.0	Laravel Functionality
-   - **VIEW:** 
+   **VIEW:** 
    <ul>
    <li>Log in and register page</li>
    <li>Booking form page</li>
@@ -65,7 +65,7 @@ Proposal - Task Delegation
    <li>Confirmation page with total price and discount</li>
    </ul>
 
-   - **Controller:**
+   **Controller:**
    <ul>
    <li> For model to pass form data, get data and find data
    <li> For update and cancel booking
@@ -74,28 +74,29 @@ Proposal - Task Delegation
    <li> check availabe ticket, time and train
    </ul>
 
-   - **Route:**
+   **Route:**
    <ul>
    <li> route for return views for user interface (booking form, train schedule, booking table, confirmation).
    <li> route for model binding(inject the model with user Id, Train id, booking Id, match the variables)
    <li> route for return data passed by controller into view (calculated price, train scedule with available time,date and tickets, update and delete booking, confirm booking)
    </ul>
    
-   - **Model:**
+   **Model:**
    <ul>
    <li> User has one-to-many relationship with tickets (One user can buy many tickets).
    <li> ticket has many to one relationship with train  (Many tickets consist of each train).
    <li> train has many to many relationship with ticket (each train of a day consist of many tickets based on seat number).
    </ul>
 	   
-   - **Error checking:**
-   <ul> validate booking form and show error message
+   **Error checking:**
+   <ul>
+   <li> validate booking form and show error message
    <li> validate schedule table and show error message
    <li> validate register and login and show error message
    <li> validation for update booking, check available ticket and show error message
    </ul>
 
-   - **User Athentication:**
+   **User Athentication:**
    <ul>
    <li> User Register
    <li> User login
