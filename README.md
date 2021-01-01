@@ -47,17 +47,9 @@ Proposal - Task Delegation
    <li>Discount eligibility requirements and process</li>
    </ul>
    
-#### 4.0	Entity Relationship Diagram (ER Diagram)
+#### 4.0 Entity Relationship Diagram (ER Diagram)
 
-![Entity Relationship Diagram](/resources/ERD.jpg)
-
-#### 5.0 Sequence Diagram
-
-![Entity Relationship Diagram](/resources/SD.jpg)
-
-#### 6.0 Laravel Functionality
-
-**VIEW:**
+**View:**
 
    <ul>
    <li>Log in and register page</li>
@@ -107,8 +99,14 @@ Proposal - Task Delegation
    <li> User password reset
    <li> User update profile
    </ul>
+   
+![Entity Relationship Diagram](/resources/ERD.jpg)
 
-#### 7.0 References
+#### 5.0 Sequence Diagram
+
+![Entity Relationship Diagram](/resources/SD.jpg)
+
+#### 6.0 References
 
     Markdown Cheat Sheet. (n.d.). Retrieved January 01, 2021, from https://www.markdownguide.org/cheat-sheet/
     SABAH MAP. (n.d.). Retrieved January 01, 2021, from https://www.amazingborneo.com/sabah/maps
