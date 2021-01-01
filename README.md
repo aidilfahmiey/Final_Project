@@ -46,33 +46,6 @@ Proposal - Task Delegation
    </ul>
    
 #### 4.0	Entity Relationship Diagram (ER Diagram)
-   
-   - Views :
-   	- Login and register page
-   	- Booking form page
-	- Schedule page
-	- Booking table displaying cancel and update booking
-	- Confirmation page with toal price and discount
-	
-   - Controllers :
-   	- For model to pass data
-	- For update and cancel booking
-   
-   - Routes :
-    	- route for return views.
-        - route for models.
-        - route for return data passed by controller into view
-	   
-   - Models :
-     User has one-to-many relationship with tickets. One user can buy many tickets
-     ticket has many to one relationship with train
-     train has one to many relationship with ticket
-    
-   - Error checking : 
-          - validate booking form and show error message
-          - validate schedule table and show error message
-          - validate register and login and show error message
-
 
    - **Entity Relationship Diagram (ERD)**
 
@@ -81,8 +54,57 @@ Proposal - Task Delegation
 #### 5.0	Sequence Diagram
 
    ![Entity Relationship Diagram](/resources/SD.jpg)
+
+#### 6.0	Laravel Functionality
+   - **VIEW:** 
+   <ul>
+   <li>Log in and register page</li>
+   <li>Booking form page</li>
+   <li>Train Schedule page</li>
+   <li>Booking table displaying cancel and update page</li>
+   <li>Confirmation page with total price and discount</li>
+   </ul>
+
+   - **Controller:**
+   <ul>
+   <li> For model to pass form data, get data and find data
+   <li> For update and cancel booking
+   <li> calculate ticket price and discount
+   <li> update and delete booking 
+   <li> check availabe ticket, time and train
+   </ul>
+
+   - **Route:**
+   <ul>
+   <li> route for return views for user interface (booking form, train schedule, booking table, confirmation).
+   <li> route for model binding(inject the model with user Id, Train id, booking Id, match the variables)
+   <li> route for return data passed by controller into view (calculated price, train scedule with available time,date and tickets, update and delete booking, confirm booking)
+   </ul>
    
-#### 6.0	References  
+   - **Model:**
+   <ul>
+   <li> User has one-to-many relationship with tickets (One user can buy many tickets).
+   <li> ticket has many to one relationship with train  (Many tickets consist of each train).
+   <li> train has many to many relationship with ticket (each train of a day consist of many tickets based on seat number).
+   </ul>
+	   
+   - **Error checking:**
+   <ul> validate booking form and show error message
+   <li> validate schedule table and show error message
+   <li> validate register and login and show error message
+   <li> validation for update booking, check available ticket and show error message
+   </ul>
+
+   - **User Athentication:**
+   <ul>
+   <li> User Register
+   <li> User login
+   <li> User password reset
+   <li> User update profile
+   </ul>
+
+   
+#### 7.0	References  
         
 	Markdown Cheat Sheet. (n.d.). Retrieved January 01, 2021, from https://www.markdownguide.org/cheat-sheet/
 	SABAH MAP. (n.d.). Retrieved January 01, 2021, from https://www.amazingborneo.com/sabah/maps
