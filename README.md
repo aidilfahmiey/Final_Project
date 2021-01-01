@@ -85,6 +85,8 @@ Proposal - Task Delegation
 #### 6.0	References  
         
 	Markdown Cheat Sheet. (n.d.). Retrieved January 01, 2021, from https://www.markdownguide.org/cheat-sheet/
+	SABAH MAP. (n.d.). Retrieved January 01, 2021, from https://www.amazingborneo.com/sabah/maps
+	Berhad, K. (n.d.). Take the family on an adventure... Retrieved January 01, 2021, from https://www.ktmb.com.my/
                  
      
            
