@@ -14,7 +14,13 @@ class CreatePassengersTable extends Migration
     public function up()
     {
         Schema::create('passengers', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('booking_no');
+            $table->integer('user_id');
+            $table->string('train_id');
+            $table->string('p_name');
+            $table->integer('p_age');
+            $table->integer('p_phone');
             $table->timestamps();
         });
     }
