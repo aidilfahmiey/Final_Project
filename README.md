@@ -70,7 +70,7 @@ Proposal - Task Delegation
    <li> For model to pass form data also get data and find data from database
    <li> For update and cancel booking
    <li> calculate ticket price and discount
-   <li> check availabe ticket, time and train
+   <li> check availabe ticket, time and train 
    </ul>
 
    **Route:**
