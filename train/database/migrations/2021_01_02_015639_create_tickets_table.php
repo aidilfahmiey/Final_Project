@@ -24,11 +24,11 @@ class CreateTicketsTable extends Migration
             $table->integer('seat_no');
             $table->timestamps();
             $table->foreign('booking_no')
-                    ->references('p_name')
+                    ->references('id')
                     ->on('passengers')
                     ->onCascade('delete');
             $table->foreign('train_id')
-                    ->references('train_id')
+                    ->references('id')
                     ->on('trains')
                     ->onCascade('delete');
         });

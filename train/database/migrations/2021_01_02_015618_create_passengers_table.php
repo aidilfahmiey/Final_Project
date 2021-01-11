@@ -23,11 +23,11 @@ class CreatePassengersTable extends Migration
             $table->integer('p_phone');
             $table->timestamps();
             $table->foreign('user_id')
-                    ->references('user_id')
+                    ->references('id')
                     ->on('admins')
                     ->onCascade('delete');
             $table->foreign('train_id')
-                    ->references('train_id')
+                    ->references('id')
                     ->on('trains')
                     ->onCascade('delete');
         });

@@ -20,7 +20,7 @@ class CreateStationsTable extends Migration
             $table->string('train_id');
             $table->timestamps();
             $table->foreign('train_id')
-                    ->references('train_id')
+                    ->references('id')
                     ->on('trains')
                     ->onCascade('delete');
         });
