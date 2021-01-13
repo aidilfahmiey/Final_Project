@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::resource('train', 'App\Http\Controllers\AdminController');
 Route::resource('train', 'App\Http\Controllers\TrainController');
 Route::resource('train', 'App\Http\Controllers\TicketController');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
