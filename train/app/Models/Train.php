@@ -8,5 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Train extends Model
 {
     use HasFactory;
+    protected $primaryKey = 'train_id';
     protected $fillable = ['train_id','total_seat','origin','destination','arrival_time','departure_time'];
+
+    public function tickets(){
+        return $this->hasMany('App\Ticket');
+    }
 }

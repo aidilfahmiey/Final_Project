@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('train', 'App\Http\Controllers\AdminController');
+Route::resource('train', 'App\Http\Controllers\TrainController');
+Route::resource('train', 'App\Http\Controllers\TicketController');
