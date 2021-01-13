@@ -21,6 +21,8 @@ Route::resource('train', 'App\Http\Controllers\AdminController');
 Route::resource('train', 'App\Http\Controllers\TrainController');
 Route::resource('train', 'App\Http\Controllers\TicketController');
 
+//Login and Register Links
 Auth::routes();
 
+//If login successful redirect to home page
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
