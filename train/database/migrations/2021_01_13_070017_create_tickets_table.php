@@ -15,20 +15,12 @@ class CreateTicketsTable extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->increments('ticket_id');
-            $table->integer('train_id')->unsigned();
-            $table->foreign('train_id')
-                    ->references('train_id')
-                    ->on('trains')
-                    ->onCascade('delete');
+            $table->string('train_id')->unique();
+    
             $table->string('origin');
             $table->string('destination');
             $table->integer('price');
             $table->integer('seat_no');
-            $table->integer('shift_no')->unsigned();
-            $table->foreign('shift_no')
-                    ->references('id')
-                    ->on('users')
-                    ->onCascade('delete');
             $table->timestamps();
 
 

@@ -9,10 +9,10 @@ class Ticket extends Model
 {
     use HasFactory;
     protected $primaryKey = 'ticket_id';
-    protected $fillable = ['ticket_id', 'train_id', 'origin', 'destination', 'price', 'seat_no', 'shift_no'];
+    protected $fillable = ['ticket_id', 'train_id', 'origin', 'destination', 'price', 'seat_no'];
 
     public function admins(){
-        return $this->belongsTo('App\Admin');
+        return $this->belongsTo('App\User');
     }
 
     public function trains(){
