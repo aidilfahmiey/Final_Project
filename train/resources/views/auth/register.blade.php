@@ -62,6 +62,20 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="shift_no" class="col-md-4 col-form-label text-md-right">{{ __('Shift No') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="shift_no" type="number" class="form-control @error('shift_no') is-invalid @enderror" name="shift_no" value="{{ old('shift_no') }}" required autocomplete="age" autofocus>
+
+                                @error('shift_no')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="age" class="col-md-4 col-form-label text-md-right">{{ __('Age') }}</label>
 
                             <div class="col-md-6">
