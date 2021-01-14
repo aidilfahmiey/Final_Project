@@ -16,6 +16,7 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $primaryKey = 'id';
     protected $fillable = [
         'name',
         'email',
@@ -25,6 +26,10 @@ class User extends Authenticatable
         'phone',
         'address',
     ];
+
+    public function tickets(){
+        return $this->hasMany('App\Models\Ticket');
+    }
 
 
 /**

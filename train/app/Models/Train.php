@@ -12,6 +12,6 @@ class Train extends Model
     protected $fillable = ['train_id','total_seat','origin','destination','arrival_time','departure_time'];
 
     public function tickets(){
-        return $this->hasMany('App\Ticket');
+        return $this->hasMany('App\Models\Ticket');
     }
 }
