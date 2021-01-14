@@ -26,8 +26,8 @@ class CreateTicketsTable extends Migration
             $table->integer('seat_no');
             $table->integer('shift_no')->unsigned();
             $table->foreign('shift_no')
-                    ->references('user_id')
-                    ->on('admins')
+                    ->references('id')
+                    ->on('users')
                     ->onCascade('delete');
             $table->timestamps();
 
