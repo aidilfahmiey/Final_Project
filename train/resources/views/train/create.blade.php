@@ -1,5 +1,5 @@
-@extends('base')
-@section('main')
+@extends('layouts.app')
+@section('content')
 
 
 <div class="row">
@@ -19,13 +19,6 @@
        @endif
       <form method="post" action="{{ route('tickets.store') }}">
         @csrf
-
-      <div style="width: 50%;margin: auto;display: block;">
-         <div class="form-group">
-           <label for="id">Worker ID</label>
-           <input type="number" class="form-control" id="id" name="id" placeholder="Enter worker ID">
-         </div>
-       </div>
 
        <div style="width: 50%;margin: auto;display: block;">
         <div class="form-group">

@@ -1,8 +1,9 @@
-@extends('base')
-@section('main')
+@extends('layouts.app')
+@section('content')
+
 <div class="row">
 
-<div class="col-sm-12" style="margin-bottom: 50px;auto;display: block">
+<div class="col-sm-12" style="margin-bottom: 10px;auto;display: block">
   @if(session()->get('success'))
     <div class="alert alert-success text-center">
       {{ session()->get('success') }}  
@@ -16,9 +17,10 @@
   <table class="table table-striped">
     <thead>
         <tr>
+          <th>No.</th>
           <th>Ticket ID</th>
           <th>Train ID</th>
-          <th>Shift No</th>
+          <th>Worker ID</th>
           <th>Origin</th>
           <th>Destination</th>
           <th>Price</th>
@@ -28,23 +30,23 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($tickets as $count => $ticket)
+        @foreach($tickets as $ticket)
         <tr>
-            <td>{{++$count}}</td>
-            <td><a href="{{ route('train.show',$tickets->ticket_id)}}">{{$tickets->ticket_id}}</a></td>
 
-              <td>{{$tickets->train_id}} </td>
-              <td>{{$tickets->id}}</td>
-              <td>{{$tickets->origin}}</td>
-              <td>{{$tickets->destination}}</td>
-              <td>{{$tickets->price}}</td>
-              <td>{{$tickets->seat_no}}</td>
+              <td>{{ $loop->iteration}}</td>
+              <td>{{$ticket->ticket_id}} </td>
+              <td>{{$ticket->train_id}}</td>
+              <td>{{$ticket->user_id}}</td>
+              <td>{{$ticket->origin}}</td>
+              <td>{{$ticket->destination}}</td>
+              <td>{{$ticket->price}}</td>
+              <td>{{$ticket->seat_no}}</td>
               
             <td class="text-center">
-                <a href="{{ route('tickets.edit',$tickets->ticket_id)}}" class="btn btn-primary btn-block">Edit</a>
+                <a href="{{ route('tickets.edit',$ticket->ticket_id)}}" class="btn btn-primary btn-block">Edit</a>
             </td>
             <td class="text-center">
-                <form action="{{ route('tickets.destroy', $tickets->ticket_id)}}" method="post">
+                <form action="{{ route('tickets.destroy', $ticket->ticket_id)}}" method="post">
                   @csrf
                   @method('DELETE')
                   <button class="btn btn-danger btn-block" type="submit">Delete</button>

@@ -19,7 +19,8 @@ class TrainController extends Controller
     public function index()
     {
         $tickets = Ticket::all();
-        return view('train.index', compact('tickets'));
+        //return $tickets;
+       return view('train/index', compact('tickets'));
     }
 
     /**
@@ -42,17 +43,20 @@ class TrainController extends Controller
     {
         $request->validate([
             'train_id'=>'required',
-            'id'=>'required',
             'ticket_id' =>'required',
             'origin'=>'required',
             'destination'=>'required',
             'seat_no'=>'required',
             
         ]);
+
+        $user_id = auth()->id();
+        
+
         $tickets = new Ticket([
             'train_id' => $request->get('train_id'),
-            'id' => $request->get('id'),
             'ticket_id' => $request->get('ticket_id'),
+            'user_id' => $request['user_id'] = $user_id,
             'origin' => $request->get('origin'),
             'destination' => $request->get('destination'),
             'seat_no' => $request->get('seat_no'),

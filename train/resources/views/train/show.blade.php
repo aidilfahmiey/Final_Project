@@ -1,5 +1,6 @@
-@extends('base') 
-@section('main')
+@extends('layouts.app')
+@section('content')
+
 <div class="row" style="margin-bottom: 50px;auto;display: block">
     <div class="col-sm-8 offset-sm-2">
         <br />

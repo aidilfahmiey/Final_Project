@@ -14,9 +14,10 @@ class CreateTicketsTable extends Migration
     public function up()
     {
         Schema::create('tickets', function (Blueprint $table) {
-            $table->integer('ticket_id');
+            $table->integer('ticket_id')->primary();
             $table->string('train_id')->unique();
-            $table->integer('id')->unique();
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->string('origin');
             $table->string('destination');
             $table->integer('price');
