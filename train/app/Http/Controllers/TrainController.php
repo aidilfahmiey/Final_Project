@@ -84,9 +84,10 @@ class TrainController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($ticket_id)
     {
-        $tickets = Ticket::find($id);
+        $tickets = Ticket::find($ticket_id);
+        //return $tickets;
         return view('train.edit', compact('tickets'));  
     }
 
@@ -97,19 +98,19 @@ class TrainController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $ticket_id)
     {
         $request->validate([
+            'ticket_id'=>'required',
             'train_id'=>'required',
-            'shift_no'=>'required',
             'origin'=>'required',
             'destination'=>'required',
             'seat_no'=>'required',
             
         ]);
-        $tickets = Ticket::find($id);
+        $tickets = Ticket::find($ticket_id);
+            $tickets->ticket_id = $request->get('ticket_id');
             $tickets->train_id = $request->get('train_id');
-            $tickets->shift_no = $request->get('shift_no');
             $tickets->origin = $request->get('origin');
             $tickets->destination = $request->get('destination');
             $tickets->seat_no = $request->get('seat_no');
@@ -126,9 +127,9 @@ class TrainController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($ticket_id)
     {
-        $tickets = Ticket::find($id);
+        $tickets = Ticket::find($ticket_id);
         $tickets->delete();
         return redirect(TICKET)->with('success', 'Booking Deleted!');
     }

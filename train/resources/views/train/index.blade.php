@@ -34,7 +34,8 @@
         <tr>
 
               <td>{{ $loop->iteration}}</td>
-              <td>{{$ticket->ticket_id}} </td>
+              <td><a href="{{ route('tickets.show',$ticket->ticket_id)}}">{{$ticket->ticket_id}} 
+              
               <td>{{$ticket->train_id}}</td>
               <td>{{$ticket->user_id}}</td>
               <td>{{$ticket->origin}}</td>

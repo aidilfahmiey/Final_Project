@@ -38,19 +38,19 @@
         <div class="form-group">
           <label for="origin">Origin</label>
           <select class="form-control" id="origin" name="origin">
-            <option value="bintulu">Bintulu</option>
-            <option value="kuching">Kuching</option>
-            <option value="kudat">Kudat</option>
-            <option value="kota kinabalu">Kota Kinabalu</option>
-            <option value="kota samarahan">Kota Samarahan</option>
-            <option value="limbang">Limbang</option>
-            <option value="lahad datu">Lahad Datu</option>
-            <option value="miri">Miri</option>
-            <option value="sri aman">Sri Aman</option>
-            <option value="sibu">Sibu</option>
-            <option value="sandakan">Sandakan</option>
-            <option value="sarikei">Sarikei</option>
-            <option value="tawau">Tawau</option>
+            <option value="Bintulu">Bintulu</option>
+            <option value="Kuching">Kuching</option>
+            <option value="Kudat">Kudat</option>
+            <option value="Kota Kinabalu">Kota Kinabalu</option>
+            <option value="Kota Samarahan">Kota Samarahan</option>
+            <option value="Limbang">Limbang</option>
+            <option value="Lahad Datu">Lahad Datu</option>
+            <option value="Miri">Miri</option>
+            <option value="Sri Aman">Sri Aman</option>
+            <option value="Sibu">Sibu</option>
+            <option value="Sandakan">Sandakan</option>
+            <option value="Sarikei">Sarikei</option>
+            <option value="Tawau">Tawau</option>
           </select>
         </div>
       </div>
@@ -59,8 +59,8 @@
         <div class="form-group">
           <label for="destination">Destination</label>
           <select class="form-control" id="destination" name="destination">
-            <option value="kuching">Kuching</option>
-            <option value="tawau">Tawau</option>
+            <option value="Kuching">Kuching</option>
+            <option value="Tawau">Tawau</option>
           </select>
         </div>
       </div>
