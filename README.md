@@ -97,7 +97,7 @@ Proposal - Task Delegation
    <li> User Register
    <li> User login
    <li> User password reset
-   <li> User update profile
+   <li> User update profile aidil
    </ul>
    
 ![Entity Relationship Diagram](/resources/ERD.jpg)
@@ -111,6 +111,3 @@ Proposal - Task Delegation
     Markdown Cheat Sheet. (n.d.). Retrieved January 01, 2021, from https://www.markdownguide.org/cheat-sheet/
     SABAH MAP. (n.d.). Retrieved January 01, 2021, from https://www.amazingborneo.com/sabah/maps
     Berhad, K. (n.d.). Take the family on an adventure... Retrieved January 01, 2021, from https://www.ktmb.com.my/
-
-
-
