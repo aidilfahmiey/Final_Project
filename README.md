@@ -97,7 +97,7 @@ Proposal - Task Delegation
    <li> User Register
    <li> User login
    <li> User password reset
-   <li> User update profile aidil
+   <li> User update profile
    </ul>
    
 ![Entity Relationship Diagram](/resources/ERD.jpg)
