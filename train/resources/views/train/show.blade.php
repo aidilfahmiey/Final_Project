@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appAfter')
 @section('content')
 
 <div class="row" style="margin-bottom: 50px;auto;display: block">
