@@ -14,10 +14,9 @@
                         </div>
                     @endif
 
-                    
+
                     <div class="text-center">
-                        <h1>WELCOME TO</h1>
-                        <h1>BORNEO RAPID SYSTEM!</h1>
+                        <h1>WELCOME TO BORNEO TRAIN SYSTEM!</h1>
 
                         <a href="/tickets" class="btn btn-primary">Display Tickets</a>
                         <a href="/trains" class="btn btn-primary">Display Schedule</a>
