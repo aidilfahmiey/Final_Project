@@ -89,7 +89,6 @@
             <option value="NULL" selected="true" disabled="disabled">Select Destination</option>
             <option value="Tawau">Tawau (A)</option>
             <option value="Kuching">Kuching (B)</option>
-            
           </select>
         </div>
       </div>
