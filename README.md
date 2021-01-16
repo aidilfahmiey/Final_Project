@@ -22,6 +22,55 @@ Proposal - Task Delegation
 
 ---
 
+Project Development - Task Delegation
+
+1. SABRINA
+
+- Navigation Bar
+- Title and app name
+- Database and model
+- Edit and delete
+- Routing
+- Controller
+
+2. AZLINA
+
+- Calculate ticket price function
+- Database and model
+- Routing
+- Controller
+
+3. AIDIL
+
+- Display ticket and train schedule
+- Add new ticket and train schedule
+- User authentication
+- Routing
+- Controller
+
+---
+
+Final Report - Task Delegation
+
+1. SABRINA
+
+- Introduction
+- Objective
+- Features and functionalities
+- Define views, controllers, routes and models
+- References
+
+2. AZLINA
+
+- Define views, controllers, routes and models
+- References
+
+3. AIDIL
+
+- ERD
+- Sequence diagram
+- References
+
 ## PROJECT PROPOSAL
 
 #### 1.0 Introduction
