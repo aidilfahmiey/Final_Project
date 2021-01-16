@@ -100,7 +100,7 @@ Proposal - Task Delegation
    <li> User update profile
    </ul>
    
-![Entity Relationship Diagram](/resources/ERD.jpg)
+![Entity Relationship Diagram](/resources/ERD.png)
 
 #### 5.0 Sequence Diagram
 
