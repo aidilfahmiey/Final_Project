@@ -13,7 +13,7 @@
                 @endforeach
             </ul>
         </div>
-        <br /> 
+        <br />  
         @endif
         <form method="post" action="{{ route('trains.update', $trains->train_id) }}">
             @method('PATCH')

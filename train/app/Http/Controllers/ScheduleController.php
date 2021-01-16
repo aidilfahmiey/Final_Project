@@ -82,9 +82,7 @@ class ScheduleController extends Controller
      */
     public function edit($train_id)
     {
-        $trains = Train::find($train_id);
-        //return $trains;
-        return view('train.editSchedule', compact('trains')); 
+        //
     }
 
     /**
@@ -123,8 +121,10 @@ class ScheduleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($train_id)
     {
-        //
+        $trains = Train::find($train_id);
+        $trains->delete();
+        return redirect(TRAIN)->with('success', 'Schedule Deleted!');
     }
 }

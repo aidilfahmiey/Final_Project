@@ -29,8 +29,12 @@
                     <td>{{$train->departure_time}}</td>
                   
                     <td class="text-center">
-                        <a href="{{ route('trains.edit',$train->train_id)}}" class="btn btn-primary btn-block">Edit</a>
-                    </td>
+                      <form action="{{ route('trains.destroy', $train->train_id)}}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-danger btn-block" type="submit">Delete</button>
+                      </form>
+                  </td>
                   
                 </tr>
                 @endforeach

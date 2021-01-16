@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    <h1>WELCOME TO OUR SYSTEM!</h1>
+                    <h1>WELCOME TO BORNEO TRAIN SYSTEM!</h1>
                     <a href="/tickets" class="btn btn-primary">Display Tickets</a>
                     <a href="/trains" class="btn btn-primary">Display Schedule</a>
                 </div>
