@@ -16,9 +16,12 @@
 
 
                     <div class="text-center">
+                        <h1> ---------------------------</h1>
                         <h1>WELCOME</h1>
                         <h1>TO</h1>
                         <h1> BORNEO RAPID SYSTEM</h1>
+                        <h1> ---------------------------</h1>
+                        <p><em>Borneo Rapid is a company which provides public train transportation service dedicated for East Malaysia part that is Sarawak and Sabah area.</em></p>
 
                         <a href="/tickets" class="btn btn-primary">Display Tickets</a>
                         <a href="/trains" class="btn btn-primary">Display Schedule</a>
