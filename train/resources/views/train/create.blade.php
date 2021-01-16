@@ -87,8 +87,9 @@
           <label for="destination">Destination</label>
           <select class="form-control" id="destination" name="destination">
             <option value="NULL" selected="true" disabled="disabled">Select Destination</option>
-            <option value="Kuching">Kuching</option>
-            <option value="Tawau">Tawau</option>
+            <option value="Tawau">Tawau (A)</option>
+            <option value="Kuching">Kuching (B)</option>
+            
           </select>
         </div>
       </div>

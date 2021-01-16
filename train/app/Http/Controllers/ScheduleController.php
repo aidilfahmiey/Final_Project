@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Train;
 
-const TRAIN = '/train';
+const TRAIN = '/trains';
 
 class ScheduleController extends Controller
 {
@@ -16,9 +16,10 @@ class ScheduleController extends Controller
      */
     public function index()
     {
+
         $trains = Train::all();
-        return $trains;
-       //return view('train.showSchedule', compact('trains'));
+        //return $trains;
+       return view('train.showSchedule', compact('trains'));
     }
 
     /**
@@ -28,7 +29,7 @@ class ScheduleController extends Controller
      */
     public function create()
     {
-        //
+        return view('train.createSchedule');
     }
 
     /**
@@ -39,7 +40,27 @@ class ScheduleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'train_id'=>'required',
+            'total_seat' =>'required',
+            'origin'=>'required',
+            'destination'=>'required',
+            'arrival_time'=>'required',
+            'departure_time'=>'required',
+            
+        ]);
+
+        $trains = new Train([
+            'train_id' => $request->get('train_id'),
+            'total_seat' => $request->get('total_seat'),
+            'origin' => $request->get('origin'),
+            'destination' => $request->get('destination'),
+            'arrival_time' => $request->get('arrival_time'),
+            'departure_time' => $request->get('departure_time'),
+            
+        ]);
+        $trains->save();
+        return redirect(TRAIN)->with('success', 'Train Schedule Saved!');
     }
 
     /**
@@ -52,16 +73,18 @@ class ScheduleController extends Controller
     {
         //
     }
-
+ 
     /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($train_id)
     {
-        //
+        $trains = Train::find($train_id);
+        //return $trains;
+        return view('train.editSchedule', compact('trains')); 
     }
 
     /**
@@ -71,9 +94,27 @@ class ScheduleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $train_id)
     {
-        //
+        $request->validate([
+            'train_id'=>'required',
+            'total_seat' =>'required',
+            'origin'=>'required',
+            'destination'=>'required',
+            'arrival_time'=>'required',
+            'departure_time'=>'required',
+            
+        ]);
+        $trains = Train::find($train_id);
+            $trains->train_id = $request->get('train_id');
+            $trains->total_seat = $request->get('total_seat');
+            $trains->origin = $request->get('origin');
+            $trains->destination = $request->get('destination');
+            $trains->arrival_time = $request->get('arrival_time');
+            $trains->departure_time = $request->get('departure_time');
+
+            $trains->save();
+            return redirect(TRAIN)->with('success', 'Schedule Updated!');
     }
 
     /**
