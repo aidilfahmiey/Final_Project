@@ -20,10 +20,36 @@
       <form method="post" action="{{ route('tickets.store') }}">
         @csrf
 
-       <div style="width: 50%;margin: auto;display: block;">
+      <div style="width: 50%;margin: auto;display: block;">
         <div class="form-group">
           <label for="train_id">Train ID</label>
-          <input type="text" class="form-control" id="train_id" name="train_id" placeholder="Enter train ID">
+          <select class="form-control" id="train_id" name="train_id">
+            <option value="NULL" selected="true" disabled="disabled">Select Train ID</option>
+            <option value="KCH01A">KCH01A</option>
+            <option value="KSN02A">KSN02A</option>
+            <option value="SAN03A">SAN03A</option>
+            <option value="SRK04A">SRK04A</option>
+            <option value="SBU05A">SBU05A</option>
+            <option value="BTL06A">BTL06A</option>
+            <option value="MRI07A">MRI07A</option>
+            <option value="LBG08A">LBG08A</option>
+            <option value="KKU09A">KKU09A</option>
+            <option value="KDT10A">KDT10A</option>
+            <option value="SDK11A">SDK11A</option>
+            <option value="LHD12A">LHD12A</option>
+            <option value="TWU13B">TWU13B</option>
+            <option value="LHD12B">LHD12B</option>
+            <option value="SDK11B">SDK11B</option>
+            <option value="KDT10B">KDT10B</option>
+            <option value="KKU09B">KKU09B</option>
+            <option value="LBG08B">LBG08B</option>
+            <option value="MRI07B">MRI07B</option>
+            <option value="BTL06B">BTL06B</option>
+            <option value="SBU05B">SBU05B</option>
+            <option value="SRK04B">SRK04B</option>
+            <option value="SAN03B">SAN03B</option>
+            <option value="KSN02B">KSN02B</option>
+          </select>
         </div>
       </div>
 
@@ -38,6 +64,7 @@
         <div class="form-group">
           <label for="origin">Origin</label>
           <select class="form-control" id="origin" name="origin">
+            <option value="NULL" selected="true" disabled="disabled">Select Origin</option>
             <option value="Bintulu">Bintulu</option>
             <option value="Kuching">Kuching</option>
             <option value="Kudat">Kudat</option>
@@ -59,6 +86,7 @@
         <div class="form-group">
           <label for="destination">Destination</label>
           <select class="form-control" id="destination" name="destination">
+            <option value="NULL" selected="true" disabled="disabled">Select Destination</option>
             <option value="Kuching">Kuching</option>
             <option value="Tawau">Tawau</option>
           </select>
