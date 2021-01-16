@@ -48,7 +48,7 @@
             </div>
 
             <div class="text-center">
-            <a href="{{ route('train.index')}}" class="btn btn-primary">Return</a>&nbsp;&nbsp;
+            <a href="{{ route('tickets.index')}}" class="btn btn-primary">Returns</a>&nbsp;&nbsp;  
             <button type="submit" class="btn btn-primary">Update Details</button>
             </div>
         </form>
