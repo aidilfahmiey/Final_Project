@@ -20,7 +20,7 @@ class TrainController extends Controller
     {
         $tickets = Ticket::all();
         //return $tickets;
-       return view('train/index', compact('tickets'));
+       return view('train.index', compact('tickets'));
     }
 
     /**
@@ -75,6 +75,7 @@ class TrainController extends Controller
     public function show($ticket_id)
     {
         $tickets = Ticket::find($ticket_id);
+  
         return view('train.show', compact('tickets'));
     }
 

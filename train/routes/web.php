@@ -27,3 +27,5 @@ Auth::routes();
 //If login successful redirect to home page
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('tickets', 'App\Http\Controllers\TrainController');
+Route::resource('trains', 'App\Http\Controllers\ScheduleController');
+

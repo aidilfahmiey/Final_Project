@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label for="id">Worker ID</label>
-                <input type="number" class="form-control" name="id" value="{{ $tickets->id }}" readonly>
+                <input type="number" class="form-control" name="id" value="{{ $tickets->user_id }}" readonly>
             </div>
             <div class="form-group">
                 <label for="origin">Origin</label>

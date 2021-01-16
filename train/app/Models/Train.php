@@ -14,4 +14,5 @@ class Train extends Model
     public function tickets(){
         return $this->hasMany('App\Models\Ticket');
     }
+    
 }
