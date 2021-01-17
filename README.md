@@ -104,8 +104,6 @@ Final Report - Task Delegation
 
 **Views :**
 
-<br>
-
    <ul>
    <li>home.blade.php : Displays dashboard as a Home page once user successfully register and login</li>
    <li>login.blade.php : Displays User Log in page</li>
@@ -119,8 +117,6 @@ Final Report - Task Delegation
 <br>
 
 **Controllers :**
-
-<br>
 
    <ul>
    <li> HomeController.php :</li>
@@ -149,8 +145,6 @@ Final Report - Task Delegation
 
 **Routes :**
 
-<br>
-
    <ul>
    <li>Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'): Route for return views for Home page which corresponds with HomeController.php</li>
    <li>Route::resource('tickets', 'App\Http\Controllers\TrainController'): Route for return data passed by TrainController.php into view</li>
@@ -161,8 +155,6 @@ Final Report - Task Delegation
  
 **Models :**
 
-<br>
-
    <ul>
    <li> User.php : User has one-to-many relationship with tickets (One user can buy many tickets)</li>
    <li> Ticket.php : Ticket has one to one relationship with train (One ticket consist of only one train)</li>
@@ -172,6 +164,7 @@ Final Report - Task Delegation
 <br> 
 
 **Error Checking :**
+
    <ul>
    <li> Validate booking form and show error message</li>
    <li> Validate schedule table and show error message</li>
@@ -192,9 +185,9 @@ Final Report - Task Delegation
  
  <br>
  
- **Entity Relationship Diagram : **
- 
- <br>
+ **Entity Relationship Diagram :**
+
+<br>
 
 ![Entity Relationship Diagram](/resources/ERD.png)
 
