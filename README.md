@@ -121,20 +121,14 @@ Final Report - Task Delegation
    <li> Allows user data to be retrieved from database to proceed user login to Home page
    </ul>
    </li>
-	
    <br>
-   
-   <ul>
    <li> ScheduleController.php : </li>
    <ul> 
    <li> Allows train schedule data from new train schedule form to be passed to the database</li>
    <li> Allows train schedule data to be removed from database
    </ul>
    </li>
-
    <br>
-   
-   <ul>
    <li> TrainController.php :
    <ul>
    <li> Allows ticket booking data from new ticket booking form to be passed to the database</li>
