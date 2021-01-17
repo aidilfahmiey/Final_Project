@@ -136,6 +136,8 @@ Final Report - Task Delegation
    <li> Allows ticket booking data to be removed from database
    </ul>
    </li>
+  
+ <br>
 
 **Routes :**
 
@@ -145,6 +147,8 @@ Final Report - Task Delegation
    <li>Route::resource('trains', 'App\Http\Controllers\ScheduleController') : Route for return data passed by ScheduleController.php into view</li>
    </ul>
    
+ <br>
+ 
 **Models :**
 
    <ul>
@@ -152,7 +156,9 @@ Final Report - Task Delegation
    <li> Ticket.php : Ticket has one to one relationship with train (One ticket consist of only one train)</li>
    <li> Train.php : Train has many to many relationship with ticket (Each train of a day consist of many tickets based on seat number).
    </ul>
-	   
+
+<br> 
+
 **Error checking:**
    <ul>
    <li> Validate booking form and show error message</li>
@@ -160,6 +166,8 @@ Final Report - Task Delegation
    <li> Validate register and login and show error message</li>
    <li> Validation for update booking details, check available ticket and show error message</li>
    </ul>
+   
+<br>
 
 **User Athentication:**
 
