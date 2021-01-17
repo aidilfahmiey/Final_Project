@@ -75,12 +75,18 @@ Final Report - Task Delegation
 
 ## PROJECT PROPOSAL
 
+<br> 
+
 #### 1.0 Introduction
+
+<br>
 
 > In this day and age, railway transportation is one of the important modes of transport in Malaysia. In our project, Borneo Rapid is a company which provides public train transportation service dedicated for East Malaysia part that is Sarawak and Sabah area. Therefore, our Borneo Rapid System is created which meant to ease railway management process which involve the registration for new user, ticketing and transactions of available trains in certain stations. In our system, the data of registered user, available trains and stations as well as booked tickets are able to be stored in this system in different relations. Our main objective in this project is to allow the user to display, create queries, add, modify and remove some data. In addition to that, new user is allowed to register by using form created as well as allowing users to retrieve information regarding train schedule. Other than that, user can predict the total price for one-way journey by using the function created in this system.
 
 #### 2.0 Objective
-
+ 
+ <br>
+ 
    <ul>
    <li>To ease railway management process</li>
    <li>To allow the user to add personal data and booking data in the booking form</li>
@@ -89,7 +95,11 @@ Final Report - Task Delegation
    <li>To add the number of passenger for recent bought ticket</li>
    </ul>
 
+<br>
+
 #### 3.0 Features and functionalities
+
+<br>
 
    <ul>
    <li>Train booking management system</li>
@@ -97,10 +107,16 @@ Final Report - Task Delegation
    <li>To allow the system to display the train schedule</li>
    <li>Discount eligibility requirements and process</li>
    </ul>
-   
+ 
+ <br>
+ 
 #### 4.0 Entity Relationship Diagram (ER Diagram)
 
+<br> 
+
 **Views :**
+
+<br>
 
    <ul>
    <li>home.blade.php : Displays dashboard as a Home page once user successfully register and login</li>
@@ -111,8 +127,12 @@ Final Report - Task Delegation
    <li>showSchedule.blade.php : Displays Train Schedule page with delete button</li>
    <li>createSchedule.blade.php : Displays New Train Schedule Form page</li>
    </ul>
+   
+<br>
 
 **Controllers :**
+
+<br>
 
    <ul>
    <li> HomeController.php :</li>
@@ -140,6 +160,7 @@ Final Report - Task Delegation
  <br>
 
 **Routes :**
+<br>
 
    <ul>
    <li>Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'): Route for return views for Home page which corresponds with HomeController.php</li>
@@ -151,6 +172,8 @@ Final Report - Task Delegation
  
 **Models :**
 
+<br>
+
    <ul>
    <li> User.php : User has one-to-many relationship with tickets (One user can buy many tickets)</li>
    <li> Ticket.php : Ticket has one to one relationship with train (One ticket consist of only one train)</li>
@@ -159,7 +182,7 @@ Final Report - Task Delegation
 
 <br> 
 
-**Error checking:**
+**Error Checking :**
    <ul>
    <li> Validate booking form and show error message</li>
    <li> Validate schedule table and show error message</li>
@@ -169,7 +192,7 @@ Final Report - Task Delegation
    
 <br>
 
-**User Athentication:**
+**User Athentication :**
 
    <ul>
    <li> User registeration
@@ -177,12 +200,24 @@ Final Report - Task Delegation
    <li> User password reset
    <li> User update profile
    </ul>
-   
+ 
+ <br>
+ 
+ **Entity Relationship Diagram : **
+ 
+ <br>
+
 ![Entity Relationship Diagram](/resources/ERD.png)
+
+<br> 
 
 #### 5.0 Sequence Diagram
 
+<br>
+
 ![Entity Relationship Diagram](/resources/SD.jpg)
+
+<br>
 
 #### 6.0 References
 
