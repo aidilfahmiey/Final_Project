@@ -120,6 +120,7 @@ Final Report - Task Delegation
    <li> Allows user data from registeration form to be passed to the database</li>
    <li> Allows user data to be retrieved from database to proceed user login to Home page
    </ul>
+   </li>
 	
    <br>
    
@@ -129,6 +130,7 @@ Final Report - Task Delegation
    <li> Allows train schedule data from new train schedule form to be passed to the database</li>
    <li> Allows train schedule data to be removed from database
    </ul>
+   </li>
 
    <br>
    
@@ -139,6 +141,7 @@ Final Report - Task Delegation
    <li> Allows ticket booking data to be updated</li>
    <li> Allows ticket booking data to be removed from database
    </ul>
+   </li>
 
 **Routes :**
 
