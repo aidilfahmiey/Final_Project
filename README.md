@@ -79,13 +79,9 @@ Final Report - Task Delegation
 
 #### 1.0 Introduction
 
-<br>
-
 > In this day and age, railway transportation is one of the important modes of transport in Malaysia. In our project, Borneo Rapid is a company which provides public train transportation service dedicated for East Malaysia part that is Sarawak and Sabah area. Therefore, our Borneo Rapid System is created which meant to ease railway management process which involve the registration for new user, ticketing and transactions of available trains in certain stations. In our system, the data of registered user, available trains and stations as well as booked tickets are able to be stored in this system in different relations. Our main objective in this project is to allow the user to display, create queries, add, modify and remove some data. In addition to that, new user is allowed to register by using form created as well as allowing users to retrieve information regarding train schedule. Other than that, user can predict the total price for one-way journey by using the function created in this system.
 
 #### 2.0 Objective
- 
- <br>
  
    <ul>
    <li>To ease railway management process</li>
@@ -95,11 +91,7 @@ Final Report - Task Delegation
    <li>To add the number of passenger for recent bought ticket</li>
    </ul>
 
-<br>
-
 #### 3.0 Features and functionalities
-
-<br>
 
    <ul>
    <li>Train booking management system</li>
@@ -108,11 +100,7 @@ Final Report - Task Delegation
    <li>Discount eligibility requirements and process</li>
    </ul>
  
- <br>
- 
 #### 4.0 Entity Relationship Diagram (ER Diagram)
-
-<br> 
 
 **Views :**
 
@@ -160,6 +148,7 @@ Final Report - Task Delegation
  <br>
 
 **Routes :**
+
 <br>
 
    <ul>
