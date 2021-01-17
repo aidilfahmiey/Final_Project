@@ -102,6 +102,8 @@ Final Report - Task Delegation
  
 #### 4.0 Entity Relationship Diagram (ER Diagram)
 
+<br>
+
 **Views :**
 
    <ul>
