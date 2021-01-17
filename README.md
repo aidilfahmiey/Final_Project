@@ -120,7 +120,7 @@ Final Report - Task Delegation
    <li> Allows user data from registeration form to be passed to the database</li>
    <li> Allows user data to be retrieved from database to proceed user login to Home page</li>
    </ul>
-
+   <br>
    <ul>
    <li> ScheduleController.php : </li>
    <ul> 
